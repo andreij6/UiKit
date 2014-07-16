@@ -6,9 +6,9 @@
     box-shadow: $top $right $bottom $left $color;
 }
 
-@mixin arrow($mTop) {
+@mixin arrow($mTop, $color) {
     position: relative;
-    background: $drkBlue;
+    background: $color;
     z-index: 99;
 
     &:after, &:before {
@@ -23,7 +23,7 @@
     }
 
     &:after {
-        border-left-color: $drkBlue;
+        border-left-color: $color;
         border-width: 25px;
         margin-top: $mTop;
     }
@@ -54,9 +54,10 @@ body {
 header {
     height: 45%;
     padding: 0 40px 40px 40px;
-	-webkit-box-shadow: 0 8px 6px -6px #808080;
-	   -moz-box-shadow: 0 8px 6px -6px #808080;
-	        box-shadow: 0 8px 6px -6px #808080;
+	-webkit-box-shadow: 0 8px 6px -6px #b2b2b2;
+	   -moz-box-shadow: 0 8px 6px -6px #b2b2b2;
+	        box-shadow: 0 8px 6px -6px #b2b2b2;
+            margin-bottom: 45px;
 
 
     div {
@@ -65,9 +66,9 @@ header {
 }
 
 .arrow_box {
-    @include arrow(-75px);
+    @include arrow(-75px, $drkBlue);
 
-    line-height: 135px;
+    padding-top: 45px;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -126,7 +127,7 @@ header {
 
 .Featured {
     height: 25%;
-    padding-top: 30px;
+    padding-top: 25px;
 
     div {
         height: 100%;
@@ -143,9 +144,14 @@ header {
     }
 
     .f-map {
+        padding: 0;
 
         .pointer {
-            @include arrow(-50px);
+            @include arrow(-50px, #808080);
+        }
+
+        .information {
+            background: url("/Images/world-map-146505_150.png");
         }
     }
 }

@@ -77,6 +77,12 @@
     </Content>
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Todo.css">
+      <DependentUpon>Todo.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Todo.min.css">
+      <DependentUpon>Todo.css</DependentUpon>
+    </Content>
     <Content Include="Content\UiKit.css">
       <DependentUpon>UiKit.scss</DependentUpon>
     </Content>
@@ -86,6 +92,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\nasa-140304_640.jpg" />
+    <Content Include="Images\world-map-146505_150.png" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -105,11 +112,17 @@
     <Content Include="Content\UiKit.css.map">
       <DependentUpon>UiKit.css</DependentUpon>
     </Content>
+    <Content Include="Content\Todo.scss" />
+    <Content Include="Content\Todo.css.map">
+      <DependentUpon>Todo.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.9.0-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\lightbox.js" />
+    <Content Include="Todo.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
   </ItemGroup>
